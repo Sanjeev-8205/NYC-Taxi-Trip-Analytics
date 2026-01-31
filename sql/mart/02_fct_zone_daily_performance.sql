@@ -1,4 +1,4 @@
---fct_zone_daily_performance.sql
+--02_fct_zone_daily_performance.sql
 --Purpose: To aggregate the daily zone performance.
 --Grain: 1 row per unique pickup_zone_name, pickup_borough, pickup_date combinations
 --Source: stg.events
