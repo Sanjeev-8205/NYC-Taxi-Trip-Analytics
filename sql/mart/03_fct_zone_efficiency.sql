@@ -2,7 +2,7 @@
 --Purpose: To find the efficiency of the zones.
 --Grain: 1 row per unique combination of pickup_zone and pickup_date
 --Source: stg.events
---Note: Reflets the effectivesness of each zone in each day using the aggregates.
+--Note: Reflets the effectiveness of each zone in each day using the aggregates.
 
 CREATE OR REPLACE TABLE `nyc-taxi-485918.mart.fct_zone_efficiency` AS
 SELECT
