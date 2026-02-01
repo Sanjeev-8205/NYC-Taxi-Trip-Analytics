@@ -9,6 +9,7 @@ SELECT
   pickup_zone_name,
   pickup_date,
   SAFE_DIVIDE(SUM(total_amount), COUNT(*)) AS revenue_per_trip,
+  SAFE_DIVIDE(SUM(total_amount),SUM(trip_distance)) AS revenue_per_mile,
   SAFE_DIVIDE(SUM(fare_amount), SUM(trip_distance)) AS fare_per_miles,
   SAFE_DIVIDE(SUM(total_amount),SUM(trip_duration_minutes)) AS revenue_per_minute,
   AVG(passenger_count) AS avg_passenger_count
