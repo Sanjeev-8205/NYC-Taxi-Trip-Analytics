@@ -2,7 +2,9 @@
 --Purpose: To allocate 100 taxis to the eligible zones during high priority hours.
 --Grain: 1 row per unique combination of pickup_zone_name, clusters, pickup_hour
 --Source: mart.fct_zone_hourly_efficiency
---Note: The allocation was decided by using hourly trips demand weight.
+--Note:
+-- -The allocation was decided by using hourly trips demand weight.
+-- -This view has (zone x hour) level high priority hours compared to the baseline. Hence, this is much more accurate than the baseline. 
 
 WITH zone_hourly_metrics AS(
   SELECT
