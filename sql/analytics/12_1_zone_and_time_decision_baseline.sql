@@ -1,13 +1,13 @@
 --zone_and_time_decision_baseline.sql
---Purpose: To find the best zones for the most priority hours where the taxis can be deployed for best revenue results.
+--Purpose: To allocate 100 taxis to best zones during high priority hours.
 --Grain: 1 row per unique combination of pickup_zone_name and zone_clusters
 --Source: mart.fct_zone_efficiency and mart.fct_hourly_demand
 --Note:
 -- -This is a two stage framework.
 -- -The clusters are derived by using the zone efficiency table and the priority hours are derived from the hourly demand table seperately.
 -- -Both these results are cross joined to get the main output.
--- -This is a baseline which uses city wide priority hour. Due to this, the (zone x hour) level priority hours are not that accurate. 
--- -Hence, regard this as just a baseline.
+-- -This is a baseline which uses city wide priority hour. Due to this, the (zone x hour) level priority hours are not even accurate and performs really worse. 
+-- -Hence, considering this limitation, regard this as just a baseline.
 -- -A different sql query is built which contains zone x hour level priority hours which is more consistent and accurate.
 
 CREATE OR REPLACE VIEW `nyc-taxi-485918.analytics.zone_and_time_decision_baseline` AS
