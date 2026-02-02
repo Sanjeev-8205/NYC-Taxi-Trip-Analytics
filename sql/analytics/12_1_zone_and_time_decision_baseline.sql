@@ -6,6 +6,9 @@
 -- -This is a two stage framework.
 -- -The clusters are derived by using the zone efficiency table and the priority hours are derived from the hourly demand table seperately.
 -- -Both these results are cross joined to get the main output.
+-- -This is a baseline which uses city wide priority hour. Due to this, the (zone x hour) level priority hours are not that accurate. 
+-- -Hence, regard this as just a baseline.
+-- -A different sql query is built which contains zone x hour level priority hours which is more consistent and accurate.
 
 CREATE OR REPLACE VIEW `nyc-taxi-485918.analytics.zone_and_time_decision_baseline` AS
 WITH zone_metrics AS(
