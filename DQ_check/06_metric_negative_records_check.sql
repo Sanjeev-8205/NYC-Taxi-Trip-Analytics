@@ -4,6 +4,7 @@
 -- Core aggregated metrics must never be negative.
 -- Any violation indicates issues in aggregation ore modeling.
 -- The affected records are excluded from the results.
+-- This is expected to return 0 rows.
 
 -- REQUIRED INPUTS:
 -- table: mart.fct_hourly_demand
