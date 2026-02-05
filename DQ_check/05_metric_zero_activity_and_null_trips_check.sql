@@ -6,7 +6,7 @@
 -- Tha affected records are excluded from the downstream marts and the issue is documented.
 
 -- REQUIRED INPUTS:
--- table: stg.events_view_dedup
+-- table: mart.fct_hourly_demand
 -- critical_column: total_trip
 
 SELECT
