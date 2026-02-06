@@ -11,7 +11,7 @@ Each dashboard corresponds to a distinct analytical goal and audience, rather th
 
 ## Dashboard Structure
 
-### 1️⃣ Demand and Revenue Overview
+### Demand and Revenue Overview
 
 **Purpose:**
 Provide a high-level view of **when demand occurs and how it translates into revenue**.
@@ -31,7 +31,7 @@ Provide a high-level view of **when demand occurs and how it translates into rev
 
 ---
 
-### 2️⃣ Zone Performance and Efficiency
+### Zone Performance and Efficiency
 
 **Purpose:**
 Evaluate **zone-level performance and pricing efficiency**, separating volume from value.
@@ -51,7 +51,7 @@ Evaluate **zone-level performance and pricing efficiency**, separating volume fr
 
 ---
 
-### 3️⃣ Operational Efficiency and Supply Optimization
+### Operational Efficiency and Supply Optimization
 
 **Purpose:**
 Support **operational decision-making** by identifying high-value and low-efficiency zone–hour combinations.
