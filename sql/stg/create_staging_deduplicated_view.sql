@@ -11,4 +11,5 @@ SELECT
     PARTITION BY pickup_datetime, dropoff_datetime, pickup_location_id, dropoff_location_id, trip_distance, total_amount
   ) AS ranked
 FROM `nyc-taxi-485918.stg.events`
+WHERE trip_duration_minutes>0 and total_amount>0
 QUALIFY ranked=1;
