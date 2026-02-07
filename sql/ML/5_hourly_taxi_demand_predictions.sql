@@ -4,7 +4,7 @@
 -- -This is a very important table as this stores the predictions odf the model.
 -- -These predictions are used in taxi allocation query to allocate the taxis for the specific date.
 
-CREATE OR REPLACE TABLE `nyc-taxi-485918.analytics.hourly_taxi_demand_predictions` AS
+CREATE OR REPLACE TABLE `nyc-taxi-485918.ML.hourly_taxi_demand_predictions` AS
 SELECT
   pickup_zone_name,
   predicted_total_trip AS predicted_trips,
