@@ -64,7 +64,7 @@ These queries form the **single source of truth** for analytics and dashboards.
 
 ---
 
-## sql/ml/
+## `sql/ml/`
 
 **Purpose:** Feature engineering and model orchestration
 
