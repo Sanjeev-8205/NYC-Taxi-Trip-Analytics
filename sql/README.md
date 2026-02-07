@@ -16,8 +16,8 @@ sql/
 ├── raw/
 ├── staging/
 ├── marts/
-├── analytics/
-└── ml/
+├── ml/
+└── analytics/
 ```
 
 ---
