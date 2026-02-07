@@ -174,7 +174,7 @@ Changing the prediction date and rerunning allocation yields a **new operational
 
 ---
 
-## 📌 Final Note
+## Final Note
 
 This project is intentionally designed to reflect **real-world analytics engineering practices**, not just isolated SQL queries or ML experiments.
 
