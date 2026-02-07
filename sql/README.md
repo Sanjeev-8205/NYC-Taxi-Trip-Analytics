@@ -16,7 +16,8 @@ sql/
 ├── raw/
 ├── staging/
 ├── marts/
-└── analytics/
+├── analytics/
+└── ml/
 ```
 
 ---
@@ -63,6 +64,21 @@ These queries form the **single source of truth** for analytics and dashboards.
 
 ---
 
+## sql/ml/
+
+**Purpose:** Feature engineering and model orchestration
+
+Contains SQL used to:
+
+* Generate ML-ready feature tables from mart data
+* Train and evaluate BigQuery ML models
+* Run batch predictions for hourly demand forecasting
+* These queries consume mart tables and produce outputs that are later used by the analytics layer for taxi allocation.
+
+Detailed ML logic and design decisions are documented separately in the project’s ml/ folder.
+
+---
+
 ## `sql/analytics/`
 
 **Purpose:** Question-driven analysis and insights
@@ -83,6 +99,7 @@ Files are ordered to reflect a **progressive analytical narrative**.
 * No analytics directly on raw data
 * Reusable, composable SQL
 * Cost-aware querying under BigQuery Sandbox constraints
+* ML workflows consume curated marts and do not bypass the analytics pipeline
 
 ---
 
@@ -90,7 +107,7 @@ Files are ordered to reflect a **progressive analytical narrative**.
 
 * Each SQL file is designed to be runnable independently
 * Table creation logic is isolated from analytical queries
-* Changes in logic should propagate **raw → staging → marts → analytics**
+* Changes in logic should propagate **raw → staging → marts → ml → analytics**
 
 ---
 
