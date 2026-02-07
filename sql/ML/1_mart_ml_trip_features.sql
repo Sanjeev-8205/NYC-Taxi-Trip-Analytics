@@ -1,4 +1,4 @@
--- mart_ml_trip_features.sql
+-- 1_mart_ml_trip_features.sql
 -- Purpose: To create a mart table for predicting total_trips using regression model.
 -- Grain: 1 row per unique combination pickup_zone_name, pickup_date, pickup_hour, pickup_weekday
 -- Source: stg.events_view_dedup
