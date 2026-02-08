@@ -139,6 +139,8 @@ Dashboards consume only **analytics-layer tables**, never raw data.
 
 See `dashboards/README.md` for details.
 
+Link: [`https://lookerstudio.google.com/reporting/c2c4d0ba-e702-4503-80ec-78c3892d80e4`](https://lookerstudio.google.com/reporting/c2c4d0ba-e702-4503-80ec-78c3892d80e4)
+
 ---
 
 ## Design Principles
